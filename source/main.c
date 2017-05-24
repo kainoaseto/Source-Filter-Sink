@@ -9,7 +9,7 @@ int main(int argc, char* argv[])
 	}
 
 	FILE* input_file;
-	if ( !fopen_s(input_file, argv[1], "rb") )
+	if ( fopen_s(&input_file, argv[1], "rb") )
 	{
 		fprintf_s(stderr, "Failed to open file\n");
 		return 2;
@@ -32,6 +32,6 @@ int main(int argc, char* argv[])
 	}
 
 	fclose(input_file);
-	
+
 	return 0;
 }

@@ -3,7 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Source-Filter-Sink", "Source-Filter-Sink\Source-Filter-Sink.vcxproj", "{186987F6-8043-4710-BB4E-CB65AD01E5A6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lab5", "lab5\lab5.vcxproj", "{EE5C3B54-1A87-476A-9622-FBC9AE578BE7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "source", "source\source.vcxproj", "{F00346D6-884C-41A5-8569-BFF51016E074}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "filter", "filter\filter.vcxproj", "{8439EC97-4A4E-49A0-9313-354EEDF40EBB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sink", "sink\sink.vcxproj", "{E9DFAB17-1673-4159-91C7-5FDADC041782}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5DD993A0-200F-41D7-9F65-05E011101674}"
+	ProjectSection(SolutionItems) = preProject
+		include.h = include.h
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +22,22 @@ Global
 		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{186987F6-8043-4710-BB4E-CB65AD01E5A6}.Debug|Win32.ActiveCfg = Debug|Win32
-		{186987F6-8043-4710-BB4E-CB65AD01E5A6}.Debug|Win32.Build.0 = Debug|Win32
-		{186987F6-8043-4710-BB4E-CB65AD01E5A6}.Release|Win32.ActiveCfg = Release|Win32
-		{186987F6-8043-4710-BB4E-CB65AD01E5A6}.Release|Win32.Build.0 = Release|Win32
+		{EE5C3B54-1A87-476A-9622-FBC9AE578BE7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EE5C3B54-1A87-476A-9622-FBC9AE578BE7}.Debug|Win32.Build.0 = Debug|Win32
+		{EE5C3B54-1A87-476A-9622-FBC9AE578BE7}.Release|Win32.ActiveCfg = Release|Win32
+		{EE5C3B54-1A87-476A-9622-FBC9AE578BE7}.Release|Win32.Build.0 = Release|Win32
+		{F00346D6-884C-41A5-8569-BFF51016E074}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F00346D6-884C-41A5-8569-BFF51016E074}.Debug|Win32.Build.0 = Debug|Win32
+		{F00346D6-884C-41A5-8569-BFF51016E074}.Release|Win32.ActiveCfg = Release|Win32
+		{F00346D6-884C-41A5-8569-BFF51016E074}.Release|Win32.Build.0 = Release|Win32
+		{8439EC97-4A4E-49A0-9313-354EEDF40EBB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8439EC97-4A4E-49A0-9313-354EEDF40EBB}.Debug|Win32.Build.0 = Debug|Win32
+		{8439EC97-4A4E-49A0-9313-354EEDF40EBB}.Release|Win32.ActiveCfg = Release|Win32
+		{8439EC97-4A4E-49A0-9313-354EEDF40EBB}.Release|Win32.Build.0 = Release|Win32
+		{E9DFAB17-1673-4159-91C7-5FDADC041782}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E9DFAB17-1673-4159-91C7-5FDADC041782}.Debug|Win32.Build.0 = Debug|Win32
+		{E9DFAB17-1673-4159-91C7-5FDADC041782}.Release|Win32.ActiveCfg = Release|Win32
+		{E9DFAB17-1673-4159-91C7-5FDADC041782}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

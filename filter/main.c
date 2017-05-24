@@ -3,7 +3,7 @@
 int main(int argc, char* argv[])
 {
 	int curr_char;
-
+	
 	for (;;)
 	{
 		curr_char = fgetc(stdin);

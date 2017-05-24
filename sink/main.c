@@ -9,7 +9,7 @@ int main(int argc, char* argv[])
 	}
 
 	FILE* dest_file;
-	if (!fopen_s(dest_file, argv[1], "wb"))
+	if ( fopen_s(&dest_file, argv[1], "wb+") )
 	{
 		fprintf(stderr, "Failed to open destination file\n");
 		return 2;
