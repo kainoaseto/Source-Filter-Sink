@@ -1,3 +1,8 @@
+// Kainoa Seto
+// Source-Filter-Sink 
+// This demonstrates anonymous pipes in the win32 api while executing 3 seperate processes
+// connected by two of the anonymous pipes to filter data between processes by stdout->stdin
+// Lab5/main.c
 #include "utils.h"
 
 int main(int argc, char* argv[])

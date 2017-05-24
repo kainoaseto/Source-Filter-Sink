@@ -1,7 +1,13 @@
+// Kainoa Seto
+// Source-Filter-Sink 
+// This filter program just filters the lowercase vowels and makes them uppercase
+// Source/main.c
 #include "../include.h"
 
 int main(int argc, char* argv[])
 {
+	fprintf_s(stderr, "Started filter.exe\n");
+
 	int curr_char;
 	
 	for (;;)
@@ -29,6 +35,8 @@ int main(int argc, char* argv[])
 		// Add our Artificial delay
 		ART_DELAY();
 	}
+
+	fprintf_s(stderr, "Completed filter.exe\n");
 
 	return 0;
 }

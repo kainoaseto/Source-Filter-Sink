@@ -1,7 +1,16 @@
+// Kainoa Seto
+// Source-Filter-Sink 
+// This is the source program that takes an input file and outputs it to stdout
+// Source/main.c
+
 #include "../include.h"
 
 int main(int argc, char* argv[])
 {
+	// Since the lab is to demonstrate that all the processes are executing, this
+	// makes it more interesting to watch execute.
+	fprintf_s(stderr, "Started source.exe\n");
+
 	if (argc != 2)
 	{
 		fprintf_s(stderr, "Must specify filename as the first argument\n");
@@ -32,6 +41,8 @@ int main(int argc, char* argv[])
 	}
 
 	fclose(input_file);
+
+	fprintf_s(stderr, "Completed source.exe\n");
 
 	return 0;
 }

@@ -1,3 +1,8 @@
+// Kainoa Seto
+// Source-Filter-Sink 
+// Utilities to help with process management
+// lab5/utils.c
+
 #include "utils.h"
 
 BOOL CreatePipedProcess(char* cmd, PROCESS_INFORMATION* proc_info, STARTUPINFO* start_info)
