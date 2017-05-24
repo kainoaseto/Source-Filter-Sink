@@ -9,17 +9,8 @@ int main(int argc, char* argv[])
 	fprintf_s(stderr, "Started filter.exe\n");
 
 	int curr_char;
-	
-	for (;;)
+	while ((curr_char = fgetc(stdin)) != EOF)
 	{
-		curr_char = fgetc(stdin);
-		
-		// We have been signaled to end transmission
-		if (curr_char == EOF)
-		{
-			fputc(EOF, stdout);
-			break;
-		}
 		if (curr_char == 'a' ||
 			curr_char == 'e' ||
 			curr_char == 'i' ||

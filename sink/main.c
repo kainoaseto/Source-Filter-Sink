@@ -23,14 +23,8 @@ int main(int argc, char* argv[])
 	}
 
 	int curr_char;
-	for (;;)
+	while ((curr_char = fgetc(stdin)) != EOF)
 	{
-		// We are done reading in the file
-		if ((curr_char = fgetc(stdin)) == EOF)
-		{
-			break;
-		}
-
 		// Output to new file
 		fputc(curr_char, dest_file);
 

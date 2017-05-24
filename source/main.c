@@ -25,14 +25,8 @@ int main(int argc, char* argv[])
 	}
 
 	int curr_char;
-	for (;;)
+	while ((curr_char = fgetc(input_file)) != EOF)
 	{
-		if ((curr_char = fgetc(input_file)) == EOF)
-		{
-			// Signify that we are done by sending the 'end transmission' ascii char
-			fputc(EOF, stdout);
-			break;
-		}
 		// Output char to stdout
 		fputc(curr_char, stdout);
 
